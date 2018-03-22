@@ -1,0 +1,108 @@
+// INDEX
+
+.modal
+  position: fixed 0
+  display: flex
+  z-index: 999
+  overflow: hidden
+  pointer-events: none
+  opacity: 0
+  transform: translate3d(0,-50%,0)
+  transition: .25s $ease
+  &.is-active
+    opacity: 1
+    pointer-events: all
+    transform: translate3d(0,0%,0)
+  &-bg
+    position: fixed 0
+    z-index: 998
+    background: #888383
+    opacity: .77
+    pointer-events: none
+    opacity: 0
+    transition: .25s $ease
+    &.is-active
+      opacity: 1
+
+
+  &__wrapper
+    flex: 1 1 auto
+    display: flex
+    flex-direction: column
+    position: relative
+    font-size: 0
+    max-width: 860px
+    margin: 20px auto
+
+  &__bg
+    position: absolute
+    z-index: 1
+    top: 50%
+    left: 50%
+    min-width: 100%
+    min-height: 100%
+    height: auto
+    width: auto
+    transform: translate(-50%,-50%)
+
+  &__inner
+    flex: 1 1 auto
+    display: flex
+    flex-direction: column
+    position: relative
+    z-index: 2
+    padding-left: 60px
+    padding-right: 60px
+
+  &__close
+    position: absolute
+    z-index: 3
+    top: 12px
+    right: 15px
+    padding: 10px
+    cursor: pointer
+    transition: .25s $ease
+    &:hover
+      transform: scale(1.2)
+
+
+
+.intro
+  margin: auto 0
+  text-align: center
+  font-weight: 300
+  &__title
+    font-size: 36px
+    letter-spacing: 0.04em
+    &::after
+      display: block
+      content: ' '
+      width: 165px
+      height: 1px
+      background: $fontColor
+      margin: 30px auto
+  &__subtitle
+    margin-top: 40px
+    font-size: 20px
+
+  &__cta
+    margin-top: 30px
+    margin-bottom: 25px
+  &__download
+    span
+      font-size: 16px
+    &-icons
+      margin-top: 25px
+      display: flex
+      align-items: center
+      justify-content: center
+      a
+        display: inline-block
+        margin-right: 35px
+        font-size: 0
+        transition: .25s $ease
+        transform-origin: center bottom
+        &:last-child
+          margin-right: 0
+        &:hover
+          transform: scale(1.1)

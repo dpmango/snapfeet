@@ -1,0 +1,29 @@
+// buttons
+button
+  -webkit-apperance: none
+  border: 0
+  box-shadow: none
+  cursor: pointer
+  &:focus
+    outline: none
+
+.btn
+  display: inline-block
+  position: relative
+  text-align: center
+  transition: all $transitionSpeed ease-in-out
+  &:focus, &:active
+    outline: none
+  &--block
+    display: block
+    width: 100%
+  &-outline
+    padding: 10px 35px
+    font-size: 20px
+    font-weight: 700
+    border-radius: 10px
+    border: 1px solid $fontColor
+    background: transparent
+    &:hover
+      background: $fontColor
+      color: white

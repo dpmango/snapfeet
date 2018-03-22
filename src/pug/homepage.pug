@@ -1,0 +1,36 @@
+---
+title: Homepage title
+bodyClass: homepage
+---
+extends shared/_layout
+block content
+
+  // DUMMY CONTENT
+  div(style="min-height: 100vh; display: flex; align-items: center; justify-content: center")
+    a(href="#modal_1" js-modal).btn.btn-outline Intro modal
+    
+  
+  // MODALS
+  // util class
+  .modal-bg
+  
+  // intro modal
+  .modal#modal_1
+    .modal__wrapper
+      .modal__close(js-close-modal)
+        i.icon.icon-close
+      img(src='img/background_1.jpg' srcset="img/background_1@2x.jpg 2x").modal__bg
+      .modal__inner
+        .intro
+          .intro__title No more doubts about the size to choose
+          
+          .intro__subtitle With Snapfeet you can now make the virtual test of the shoe you buy.
+          .intro__cta
+            a(href="#modal_2" js-modal).btn.btn-outline Login
+          .intro__download
+            span or download the app
+            .intro__download-icons
+              a(href='#' target="_blank")
+                i.icon.icon-app-store
+              a(href="#" target="_blank")
+                i.icon.icon-g-play

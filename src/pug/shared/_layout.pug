@@ -1,0 +1,11 @@
+include _mixins
+doctype html
+html(lang="en")
+  head
+    include _head
+
+  body(class=bodyClass)
+    block content
+
+    block scripts
+      include _scripts
