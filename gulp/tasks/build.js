@@ -22,10 +22,10 @@ function build(callback) {
     'pug',
     'javascript',
     'images',
-    'sprite:svg',
+    // 'sprite:svg',
     'sprite:png',
     'copy',
-    'list-pages',
+    // 'list-pages',
     callback
   );
 }

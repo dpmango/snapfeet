@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
 
+  // show modal
   [].forEach.call(document.querySelectorAll("[js-modal]"), function(el){
 
     el.addEventListener('click', function(e) {
@@ -18,19 +19,30 @@ document.addEventListener('DOMContentLoaded', function(){
   })
 
   function showModal(id){
+    // hide prev before
+    [].forEach.call(document.querySelectorAll(".modal"), function(modal){
+      modal.classList.remove('is-active');
+    })
+
     document.querySelector(id).classList.add('is-active');
     document.querySelector('.modal-bg').classList.add('is-active');
   }
 
   function hideModal(id){
-    document.querySelector(id).classList.remove('is-active');
-    document.querySelector('.modal-bg').classList.remove('is-active');
+    document.querySelector(id).classList.add('is-removing');
+    setTimeout(function(){
+      document.querySelector(id).classList.remove('is-active')
+      document.querySelector(id).classList.remove('is-removing');
+      document.querySelector('.modal-bg').classList.remove('is-active');
+    }, 300)
   }
+
 
 
 });
 
 
+// HELPER FUNCTIONS
 
 (function (ElementProto) {
 	if (typeof ElementProto.matches !== 'function') {

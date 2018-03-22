@@ -1,0 +1,85 @@
+---
+title: Homepage title
+bodyClass: homepage
+---
+extends shared/_layout
+block content
+
+  // DUMMY CONTENT
+  div(style="min-height: 100vh; display: flex; align-items: center; justify-content: center")
+    div(style="display: flex; flex-direction: column")
+      a(href="#modal_1" js-modal style="margin-bottom: 10px").btn.btn-outline Intro modal
+      a(href="#modal_2" js-modal style="margin-bottom: 10px").btn.btn-outline Login modal
+      a(href="#modal_3" js-modal style="margin-bottom: 10px").btn.btn-outline Ops modal
+      a(href="#modal_4" js-modal style="margin-bottom: 10px").btn.btn-outline Product modal
+      a(href="#modal_5" js-modal style="margin-bottom: 10px").btn.btn-outline Product_2 modal
+    
+
+  
+  // MODALS
+  // util class
+  .modal-bg
+  
+  // intro modal
+  .modal#modal_1
+    .modal__wrapper
+      .modal__close(js-close-modal)
+        i.icon.icon-close
+      img(src='img/background_1.jpg' srcset="img/background_1@2x.jpg 2x").modal__bg
+      .modal__inner
+        .intro
+          .intro__title No more doubts about the size to choose
+          
+          .intro__subtitle With Snapfeet you can now make the virtual test of the shoe you buy.
+          .intro__cta
+            a(href="#modal_2" js-modal).btn.btn-outline Login
+          .intro__download
+            span or download the app
+            .intro__download-icons
+              a(href='#' target="_blank")
+                i.icon.icon-app-store
+              a(href="#" target="_blank")
+                i.icon.icon-g-play
+  
+  // login modal
+  .modal#modal_2
+    .modal__wrapper
+      .modal__close(js-close-modal)
+        i.icon.icon-close
+      .modal__bg-login
+      .modal__inner
+        .login
+          .login-left
+            .login-left__content
+              .login__title Scan the QR code with <i class="icon icon-snapfeet"></i> app
+              .login__qr
+                img(src='img/qr.png' srcset='img/qr@2x.png 2x')
+              .login__logo
+                i.icon.icon-logo
+                  
+          .login-right
+            .login__title Login
+            form(action="#").login__form
+              .login__form-fields
+                .ui-group
+                  input(type="email" name="email" placeholder="Email o ID snapfeet")
+                .ui-group
+                  input(type="password" name="password" placeholder="Password")
+              .login__form-button
+                button(type="submit").btn.btn-send Log In
+              .login__form-helpers
+                .ui-group
+                  .ui-checkbox
+                    input(type="checkbox" name="agree" id="agree")
+                    label(for="agree")
+                      span Remember me
+                a(href="#") Forgot password?
+                
+            
+  // intro modal
+  .modal#modal_3
+    .modal__wrapper
+      .modal__close(js-close-modal)
+        i.icon.icon-close
+      .modal__inner
+        

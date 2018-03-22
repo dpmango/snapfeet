@@ -1,29 +1,137 @@
 $sprite: (
 	app-store: (
-		offset-x: 0px,
-		offset-y: -47px,
+		offset-x: -93px,
+		offset-y: -150px,
 		width: 104px,
 		height: 37px,
-		total-width: 143px,
-		total-height: 84px,
+		total-width: 354px,
+		total-height: 252px,
 		image: '../img/sprite.png'
 	),
 	close: (
-		offset-x: -120px,
-		offset-y: 0px,
+		offset-x: -321px,
+		offset-y: -84px,
 		width: 23px,
 		height: 21px,
-		total-width: 143px,
-		total-height: 84px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	fit_1_fail: (
+		offset-x: -321px,
+		offset-y: 0px,
+		width: 33px,
+		height: 74px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	fit_1_ok: (
+		offset-x: -255px,
+		offset-y: -154px,
+		width: 32px,
+		height: 82px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	fit_2_fail: (
+		offset-x: -255px,
+		offset-y: 0px,
+		width: 56px,
+		height: 68px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	fit_2_ok: (
+		offset-x: -255px,
+		offset-y: -78px,
+		width: 46px,
+		height: 66px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	fit_3_ok: (
+		offset-x: -93px,
+		offset-y: -197px,
+		width: 74px,
+		height: 38px,
+		total-width: 354px,
+		total-height: 252px,
 		image: '../img/sprite.png'
 	),
 	g-play: (
-		offset-x: 0px,
-		offset-y: 0px,
+		offset-x: -93px,
+		offset-y: -103px,
 		width: 110px,
 		height: 37px,
-		total-width: 143px,
-		total-height: 84px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	logo: (
+		offset-x: -93px,
+		offset-y: 0px,
+		width: 152px,
+		height: 49px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	snapfeet: (
+		offset-x: -93px,
+		offset-y: -59px,
+		width: 130px,
+		height: 34px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	star-empty: (
+		offset-x: -321px,
+		offset-y: -115px,
+		width: 16px,
+		height: 15px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	star-fill: (
+		offset-x: -321px,
+		offset-y: -140px,
+		width: 16px,
+		height: 15px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	star-half: (
+		offset-x: -321px,
+		offset-y: -165px,
+		width: 16px,
+		height: 15px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	step_1: (
+		offset-x: 0px,
+		offset-y: 0px,
+		width: 83px,
+		height: 118px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	step_2: (
+		offset-x: 0px,
+		offset-y: -128px,
+		width: 74px,
+		height: 124px,
+		total-width: 354px,
+		total-height: 252px,
 		image: '../img/sprite.png'
 	),
 );
@@ -88,6 +196,42 @@ $sprite: (
 	.icon-close {
 		@include sprite(close)
 	}
+	.icon-fit_1_fail {
+		@include sprite(fit_1_fail)
+	}
+	.icon-fit_1_ok {
+		@include sprite(fit_1_ok)
+	}
+	.icon-fit_2_fail {
+		@include sprite(fit_2_fail)
+	}
+	.icon-fit_2_ok {
+		@include sprite(fit_2_ok)
+	}
+	.icon-fit_3_ok {
+		@include sprite(fit_3_ok)
+	}
 	.icon-g-play {
 		@include sprite(g-play)
+	}
+	.icon-logo {
+		@include sprite(logo)
+	}
+	.icon-snapfeet {
+		@include sprite(snapfeet)
+	}
+	.icon-star-empty {
+		@include sprite(star-empty)
+	}
+	.icon-star-fill {
+		@include sprite(star-fill)
+	}
+	.icon-star-half {
+		@include sprite(star-half)
+	}
+	.icon-step_1 {
+		@include sprite(step_1)
+	}
+	.icon-step_2 {
+		@include sprite(step_2)
 	}

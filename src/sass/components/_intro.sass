@@ -1,0 +1,41 @@
+
+.intro
+  margin: auto 0
+  text-align: center
+  font-weight: 300
+  padding: 60px
+  &__title
+    font-size: 36px
+    letter-spacing: 0.04em
+    &::after
+      display: block
+      content: ' '
+      width: 165px
+      height: 1px
+      background: $fontColor
+      margin: 30px auto
+  &__subtitle
+    margin-top: 40px
+    font-size: 20px
+
+  &__cta
+    margin-top: 30px
+    margin-bottom: 25px
+  &__download
+    span
+      font-size: 16px
+    &-icons
+      margin-top: 25px
+      display: flex
+      align-items: center
+      justify-content: center
+      a
+        display: inline-block
+        margin-right: 35px
+        font-size: 0
+        transition: .25s $ease
+        transform-origin: center bottom
+        &:last-child
+          margin-right: 0
+        &:hover
+          transform: scale(1.1)
