@@ -9,10 +9,10 @@ block content
     // DUMMY CONTENT
     div(style="height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center")
       div(style="display: flex; flex-direction: column;")
-        a(href="#modal_1" js-modal style="margin-bottom: 10px").snapwdg2-btn.snapwdg2-btn-outline Intro modal
-        a(href="#modal_2" js-modal style="margin-bottom: 10px").snapwdg2-btn.snapwdg2-btn-outline Login modal
-        a(href="#modal_3" js-modal style="margin-bottom: 10px").snapwdg2-btn.snapwdg2-btn-outline Ops modal
-        a(href="#modal_4" js-modal style="margin-bottom: 10px").snapwdg2-btn.snapwdg2-btn-outline Product modal
+        a(href="#snapwdg2-modal_1" js-snapwdg2-modal style="margin-bottom: 10px").snapwdg2-btn.snapwdg2-btn-outline Intro modal
+        a(href="#snapwdg2-modal_2" js-snapwdg2-modal style="margin-bottom: 10px").snapwdg2-btn.snapwdg2-btn-outline Login modal
+        a(href="#snapwdg2-modal_3" js-snapwdg2-modal style="margin-bottom: 10px").snapwdg2-btn.snapwdg2-btn-outline Ops modal
+        a(href="#snapwdg2-modal_4" js-snapwdg2-modal style="margin-bottom: 10px").snapwdg2-btn.snapwdg2-btn-outline Product modal
 
 
     
@@ -21,9 +21,9 @@ block content
     .snapwdg2-modal-bg
     
     // intro modal
-    .snapwdg2-modal#modal_1
+    .snapwdg2-modal#snapwdg2-modal_1
       .snapwdg2-modal__wrapper
-        .snapwdg2-modal__close(js-close-modal)
+        .snapwdg2-modal__close(js-snapwdg2-close-modal)
           i.snapwdg2-icon.snapwdg2-icon-close
         img(src='img/background_1.jpg' srcset="img/background_1@2x.jpg 2x").snapwdg2-modal__bg
         .snapwdg2-modal__inner
@@ -32,7 +32,7 @@ block content
             
             .snapwdg2-intro__subtitle With Snapfeet you can now make the virtual test of the shoe you buy.
             .snapwdg2-intro__cta
-              a(href="#modal_2" js-modal).snapwdg2-btn.snapwdg2-btn-outline Login
+              a(href="#snapwdg2-modal_2" js-snapwdg2-modal).snapwdg2-btn.snapwdg2-btn-outline Login
             .snapwdg2-intro__download
               span or download the app
               .snapwdg2-intro__download-icons
@@ -42,9 +42,9 @@ block content
                   i.snapwdg2-icon.snapwdg2-icon-g-play
     
     // login modal
-    .snapwdg2-modal#modal_2
+    .snapwdg2-modal#snapwdg2-modal_2
       .snapwdg2-modal__wrapper
-        .snapwdg2-modal__close(js-close-modal)
+        .snapwdg2-modal__close(js-snapwdg2-close-modal)
           i.snapwdg2-icon.snapwdg2-icon-close
         .snapwdg2-modal__bg-login
         .snapwdg2-modal__inner
@@ -77,9 +77,9 @@ block content
                   
               
     // intro modal
-    .snapwdg2-modal#modal_3
+    .snapwdg2-modal#snapwdg2-modal_3
       .snapwdg2-modal__wrapper
-        .snapwdg2-modal__close(js-close-modal)
+        .snapwdg2-modal__close(js-snapwdg2-close-modal)
           i.snapwdg2-icon.snapwdg2-icon-close
         .snapwdg2-modal__inner
           .snapwdg2-bio
@@ -97,7 +97,7 @@ block content
                 .snapwdg2-bio__name Go to the Biometry section
               .snapwdg2-bio__col
                 .snapwdg2-bio__col-ico
-                  a(href="#modal_4" js-modal).snapwdg2-btn.snapwdg2-btn-outline START
+                  a(href="#snapwdg2-modal_4" js-snapwdg2-modal).snapwdg2-btn.snapwdg2-btn-outline START
                 .snapwdg2-bio__name Press “Start”
             .snapwdg2-bio__logo
               i.snapwdg2-icon.snapwdg2-icon-logo
@@ -105,9 +105,9 @@ block content
               span Not Nik? <a href="#">Change user</a>
 
     // product modal
-    .snapwdg2-modal#modal_4
+    .snapwdg2-modal#snapwdg2-modal_4
       .snapwdg2-modal__wrapper
-        .snapwdg2-modal__close(js-close-modal)
+        .snapwdg2-modal__close(js-snapwdg2-close-modal)
           i.snapwdg2-icon.snapwdg2-icon-close
         .snapwdg2-modal__inner
           .snapwdg2-product
@@ -134,7 +134,7 @@ block content
                 .snapwdg2-product__size-wrapper
                   // current-slide - mind that should start from 0
                   // default state is hardcoded (is-active and all product info, including icons and start)
-                  .snapwdg2-product__size-scroller(js-size-scroller data-current-slide="1")
+                  .snapwdg2-product__size-scroller(js-snapwdg2-size-scroller data-current-slide="1")
                     .snapwdg2-product__size-el(
                       data-size="40"
                       data-fit-stars="2.5"
@@ -142,7 +142,7 @@ block content
                       data-fit-1="true"
                       data-fit-2="false"
                       data-fit-3="true"
-                      js-product-size) 
+                      js-snapwdg2-product-size) 
                       span 40
                     .snapwdg2-product__size-el(
                       data-size="41"
@@ -151,7 +151,7 @@ block content
                       data-fit-1="false"
                       data-fit-2="false"
                       data-fit-3="true"
-                      js-product-size).is-active
+                      js-snapwdg2-product-size).is-active
                       span 41
                     .snapwdg2-product__size-el(
                       data-size="42" 
@@ -160,7 +160,7 @@ block content
                       data-fit-1="true"
                       data-fit-2="false"
                       data-fit-3="true"
-                      js-product-size)
+                      js-snapwdg2-product-size)
                       span 42
                     .snapwdg2-product__size-el(
                       data-size="43" 
@@ -169,7 +169,7 @@ block content
                       data-fit-1="true"
                       data-fit-2="true"
                       data-fit-3="true"
-                      js-product-size) 
+                      js-snapwdg2-product-size) 
                       span 43
                     .snapwdg2-product__size-el(
                       data-size="44" 
@@ -178,16 +178,16 @@ block content
                       data-fit-1="false"
                       data-fit-2="true"
                       data-fit-3="true"
-                      js-product-size) 
+                      js-snapwdg2-product-size) 
                       span 44
-                .snapwdg2-product__size-next(js-next-slide)
+                .snapwdg2-product__size-next(js-snapwdg2-next-slide)
                   i.snapwdg2-icon.snapwdg2-icon-arrow-next
-                .snapwdg2-product__size-prev(js-prev-slide)
+                .snapwdg2-product__size-prev(js-snapwdg2-prev-slide)
                   i.snapwdg2-icon.snapwdg2-icon-arrow-prev
                     
               .snapwdg2-product__fit
-                .snapwdg2-product__fit-best(js-set-bestfit) Best fit
-                .snapwdg2-product__fit-stars(js-set-product-stars)
+                .snapwdg2-product__fit-best(js-snapwdg2-set-bestfit) Best fit
+                .snapwdg2-product__fit-stars(js-snapwdg2-set-product-stars)
                   i.snapwdg2-icon.snapwdg2-icon-star-fill
                   i.snapwdg2-icon.snapwdg2-icon-star-fill
                   i.snapwdg2-icon.snapwdg2-icon-star-fill
@@ -195,9 +195,9 @@ block content
                   i.snapwdg2-icon.snapwdg2-icon-star-empty
               
               .snapwdg2-product__icons
-                i.snapwdg2-icon.snapwdg2-icon-fit_1_fail(js-set-productfit-1)
-                i.snapwdg2-icon.snapwdg2-icon-fit_2_fail(js-set-productfit-2)
-                i.snapwdg2-icon.snapwdg2-icon-fit_3_ok(js-set-productfit-3)
+                i.snapwdg2-icon.snapwdg2-icon-fit_1_fail(js-snapwdg2-set-productfit-1)
+                i.snapwdg2-icon.snapwdg2-icon-fit_2_fail(js-snapwdg2-set-productfit-2)
+                i.snapwdg2-icon.snapwdg2-icon-fit_3_ok(js-snapwdg2-set-productfit-3)
               
               .snapwdg2-product__cta
                 a(href="#").snapwdg2-btn.snapwdg2-btn-send Continue

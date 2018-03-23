@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
   ///////////////
 
   // show modal
-  [].forEach.call(document.querySelectorAll("[js-modal]"), function(el){
+  [].forEach.call(document.querySelectorAll("[js-snapwdg2-modal]"), function(el){
 
     el.addEventListener('click', function(e) {
       var target = el.getAttribute('href');
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   // close
-  [].forEach.call(document.querySelectorAll("[js-close-modal]"), function(el){
+  [].forEach.call(document.querySelectorAll("[js-snapwdg2-close-modal]"), function(el){
     el.addEventListener('click', function(e) {
       var targetModal = e.target.closest('.snapwdg2-modal');
       hideModal( "#" + targetModal.getAttribute('id') );
@@ -44,9 +44,9 @@ document.addEventListener('DOMContentLoaded', function(){
   ////////////////
   // PRODUCT
   ///////////////
-  var slides = Array.prototype.slice.call( document.querySelectorAll("[js-product-size]") );
+  var slides = Array.prototype.slice.call( document.querySelectorAll("[js-snapwdg2-product-size]") );
 
-  [].forEach.call(document.querySelectorAll("[js-product-size]"), function(el){
+  [].forEach.call(document.querySelectorAll("[js-snapwdg2-product-size]"), function(el){
     el.addEventListener('click', function(e){
       var curIndex = slides.indexOf(this);
       navigateSlide(curIndex);
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function(){
   })
 
   // SLIDER
-  var slider = document.querySelector('[js-size-scroller]');
+  var slider = document.querySelector('[js-snapwdg2-size-scroller]');
   var sliderSlides = slider.children;
   var sliderWidth = 0;
   for (var i = 0; i < sliderSlides.length; i++) {
@@ -86,12 +86,12 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   // nav
-  document.querySelector('[js-next-slide]').addEventListener('click', function(){
+  document.querySelector('[js-snapwdg2-next-slide]').addEventListener('click', function(){
     var curSlide = parseInt(slider.getAttribute('data-current-slide'));
     navigateSlide(curSlide + 1)
   })
 
-  document.querySelector('[js-prev-slide]').addEventListener('click', function(){
+  document.querySelector('[js-snapwdg2-prev-slide]').addEventListener('click', function(){
     var curSlide = parseInt(slider.getAttribute('data-current-slide'));
     navigateSlide(curSlide - 1)
   })
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var targetFit3 = el.getAttribute('data-fit-3');
 
     // controll class
-    [].forEach.call(document.querySelectorAll("[js-product-size]"), function(control){
+    [].forEach.call(document.querySelectorAll("[js-snapwdg2-product-size]"), function(control){
       control.classList.remove('is-active');
     })
     el.classList.add('is-active');
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
   function setStars(rate, isBest){
-    var icons = document.querySelectorAll('[js-set-product-stars] i')
+    var icons = document.querySelectorAll('[js-snapwdg2-set-product-stars] i')
 
     var fillIcon = 'snapwdg2-icon-star-fill'
     var halfIcon = 'snapwdg2-icon-star-half'
@@ -163,16 +163,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // controll bestfit
     if ( isBest == "true" ){
-      document.querySelector('[js-set-bestfit]').classList.add('is-best')
+      document.querySelector('[js-snapwdg2-set-bestfit]').classList.add('is-best')
     } else {
-      document.querySelector('[js-set-bestfit]').classList.remove('is-best')
+      document.querySelector('[js-snapwdg2-set-bestfit]').classList.remove('is-best')
     }
   }
 
   function setIcons(targetFit1, targetFit2, targetFit3){
-    var elTargetFit1 = document.querySelector('[js-set-productfit-1]');
-    var elTargetFit2 = document.querySelector('[js-set-productfit-2]');
-    var elTargetFit3 = document.querySelector('[js-set-productfit-3]');
+    var elTargetFit1 = document.querySelector('[js-snapwdg2-set-productfit-1]');
+    var elTargetFit2 = document.querySelector('[js-snapwdg2-set-productfit-2]');
+    var elTargetFit3 = document.querySelector('[js-snapwdg2-set-productfit-3]');
 
     var iconFit1ok = 'snapwdg2-icon-fit_1_ok';
     var iconFit2ok = 'snapwdg2-icon-fit_2_ok';
