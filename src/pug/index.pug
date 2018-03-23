@@ -12,8 +12,7 @@ block content
       a(href="#modal_2" js-modal style="margin-bottom: 10px").btn.btn-outline Login modal
       a(href="#modal_3" js-modal style="margin-bottom: 10px").btn.btn-outline Ops modal
       a(href="#modal_4" js-modal style="margin-bottom: 10px").btn.btn-outline Product modal
-      a(href="#modal_5" js-modal style="margin-bottom: 10px").btn.btn-outline Product_2 modal
-    
+
 
   
   // MODALS
@@ -82,4 +81,89 @@ block content
       .modal__close(js-close-modal)
         i.icon.icon-close
       .modal__inner
-        
+        .bio
+          .bio__title Ops!
+          .bio__subtitle It seems that you haven't done it yet <br> the biometry
+          i.icon.icon-arrow-down
+          .bio__row
+            .bio__col
+              .bio__col-ico.bio__col-ico--first
+                i.icon.icon-step_1
+              .bio__name Open the app
+            .bio__col
+              .bio__col-ico.bio__col-ico--second
+                i.icon.icon-step_2
+              .bio__name Go to the Biometry section
+            .bio__col
+              .bio__col-ico
+                a(href="#modal_4" js-modal).btn.btn-outline START
+              .bio__name Press “Start”
+          .bio__logo
+            i.icon.icon-logo
+          .bio__helpers
+            span Not Nik? <a href="#">Change user</a>
+
+  // product modal
+  .modal#modal_4.is-active
+    .modal__wrapper
+      .modal__close(js-close-modal)
+        i.icon.icon-close
+      .modal__inner
+        .product
+          // left
+          .product__left
+            .product__brand
+              img(src='img/brand.png' srcset='img/brand@2x.png 2x')
+            .product__image
+              img(src='img/product.jpg' srcset='img/product@2x.jpg 2x')
+            .product__info
+              .product__info-left
+                .product__name Giacalustra
+                .product__desc Oxford with leather sole
+              .product__info-right
+                .product__price € 185
+                  span 00
+            .product__logo
+              i.icon.icon-logo
+          
+          // right
+          .product__right
+            .product__size-title Your size
+            .product__size(js-size-scroller)
+              .product__size-scroller
+                .product__size-el(data-size="40") 
+                  span 40
+                .product__size-el(data-size="41") 
+                  span 41
+                .product__size-el(data-size="42").is-active 
+                  span 42
+                .product__size-el(data-size="43") 
+                  span 43
+                .product__size-el(data-size="44") 
+                  span 44
+              .product__size-next
+                i.icon.icon-arrow-next
+              .product__size-prev
+                i.icon.icon-arrow-prev
+                  
+            .product__fit
+              .product__fit-best Best fit
+              .product__fit-stars
+                i.icon.icon-star-fill
+                i.icon.icon-star-fill
+                i.icon.icon-star-fill
+                i.icon.icon-star-half
+                i.icon.icon-star-empty
+            
+            .product__icons
+              i.icon.icon-fit_1_fail
+              i.icon.icon-fit_2_fail
+              i.icon.icon-fit_3_ok
+            
+            .product__cta
+              a(href="#").btn.btn-send Continue
+              .product__helpers
+                span Not Nik? <a href="#">Change user</a>
+              
+              
+             

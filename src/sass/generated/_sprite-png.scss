@@ -8,6 +8,33 @@ $sprite: (
 		total-height: 252px,
 		image: '../img/sprite.png'
 	),
+	arrow-down: (
+		offset-x: -321px,
+		offset-y: -179px,
+		width: 23px,
+		height: 11px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	arrow-next: (
+		offset-x: -321px,
+		offset-y: -115px,
+		width: 12px,
+		height: 22px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
+	arrow-prev: (
+		offset-x: -321px,
+		offset-y: -147px,
+		width: 12px,
+		height: 22px,
+		total-width: 354px,
+		total-height: 252px,
+		image: '../img/sprite.png'
+	),
 	close: (
 		offset-x: -321px,
 		offset-y: -84px,
@@ -91,7 +118,7 @@ $sprite: (
 	),
 	star-empty: (
 		offset-x: -321px,
-		offset-y: -115px,
+		offset-y: -200px,
 		width: 16px,
 		height: 15px,
 		total-width: 354px,
@@ -100,7 +127,7 @@ $sprite: (
 	),
 	star-fill: (
 		offset-x: -321px,
-		offset-y: -140px,
+		offset-y: -225px,
 		width: 16px,
 		height: 15px,
 		total-width: 354px,
@@ -108,8 +135,8 @@ $sprite: (
 		image: '../img/sprite.png'
 	),
 	star-half: (
-		offset-x: -321px,
-		offset-y: -165px,
+		offset-x: -213px,
+		offset-y: -103px,
 		width: 16px,
 		height: 15px,
 		total-width: 354px,
@@ -192,6 +219,15 @@ $sprite: (
 
 	.icon-app-store {
 		@include sprite(app-store)
+	}
+	.icon-arrow-down {
+		@include sprite(arrow-down)
+	}
+	.icon-arrow-next {
+		@include sprite(arrow-next)
+	}
+	.icon-arrow-prev {
+		@include sprite(arrow-prev)
 	}
 	.icon-close {
 		@include sprite(close)

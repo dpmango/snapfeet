@@ -1,0 +1,59 @@
+.bio
+  flex: 1 1 auto
+  margin: auto 0
+  padding: 40px 60px 30px 60px
+  text-align: center
+  &__title
+    font-weight: 700
+    font-size: 36px
+    letter-spacing: 0.04em
+  &__subtitle
+    margin: 15px 0
+    font-size: 20px
+  &__row
+    margin-top: 30px
+    display: flex
+  &__col
+    flex: 0 1 33.3%
+    width: 33.3%
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-left: 10px
+    padding-right: 10px
+    &-ico
+      flex: 1 1 auto
+      display: flex
+      justify-content: center
+      align-items: center
+      &--first
+        .icon
+          transform: translateX(20%)
+      .btn
+        display: block
+        width: 100%
+        max-width: 175px
+        padding: 6px 30px
+        border-radius: 30px
+        font-size: 16px
+
+  &__name
+    padding-top: 10px
+    font-size: 22px
+    min-height: 64px
+
+  &__logo
+    margin-top: 55px
+    text-align: left
+    .icon
+      transform: scale(.6)
+      transform-origin: left center
+
+  &__helpers
+    margin-top: 15px
+    font-size: 13px
+    color: black
+    a
+      text-decoration: underline
+      &:hover
+        text-decoration: none
