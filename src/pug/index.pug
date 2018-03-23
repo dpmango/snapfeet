@@ -7,8 +7,8 @@ block content
   .snapwdg2
     
     // DUMMY CONTENT
-    div(style="min-height: 100vh; display: flex; align-items: center; justify-content: center")
-      div(style="display: flex; flex-direction: column")
+    div(style="height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center")
+      div(style="display: flex; flex-direction: column;")
         a(href="#modal_1" js-modal style="margin-bottom: 10px").snapwdg2-btn.snapwdg2-btn-outline Intro modal
         a(href="#modal_2" js-modal style="margin-bottom: 10px").snapwdg2-btn.snapwdg2-btn-outline Login modal
         a(href="#modal_3" js-modal style="margin-bottom: 10px").snapwdg2-btn.snapwdg2-btn-outline Ops modal
@@ -130,26 +130,62 @@ block content
             // right
             .snapwdg2-product__right
               .snapwdg2-product__size-title Your size
-              .snapwdg2-product__size(js-size-scroller)
-                .snapwdg2-product__size-scroller
-                  .snapwdg2-product__size-el(data-size="40") 
-                    span 40
-                  .snapwdg2-product__size-el(data-size="41") 
-                    span 41
-                  .snapwdg2-product__size-el(data-size="42").is-active 
-                    span 42
-                  .snapwdg2-product__size-el(data-size="43") 
-                    span 43
-                  .snapwdg2-product__size-el(data-size="44") 
-                    span 44
+              .snapwdg2-product__size
+                .snapwdg2-product__size-wrapper
+                  .snapwdg2-product__size-scroller(js-size-scroller)
+                    .snapwdg2-product__size-el(
+                      data-size="40"
+                      data-fit-stars="2.5"
+                      data-bestfit="false"
+                      data-fit-1="true"
+                      data-fit-2="false"
+                      data-fit-3="true"
+                      js-product-size) 
+                      span 40
+                    .snapwdg2-product__size-el(
+                      data-size="41"
+                      data-fit-stars="5"
+                      data-bestfit="true"
+                      data-fit-1="false"
+                      data-fit-2="false"
+                      data-fit-3="true"
+                      js-product-size) 
+                      span 41
+                    .snapwdg2-product__size-el(
+                      data-size="42" 
+                      data-fit-stars="3"
+                      data-bestfit="false"
+                      data-fit-1="true"
+                      data-fit-2="false"
+                      data-fit-3="true"
+                      js-product-size).is-active 
+                      span 42
+                    .snapwdg2-product__size-el(
+                      data-size="43" 
+                      data-fit-stars="5"
+                      data-bestfit="false"
+                      data-fit-1="true"
+                      data-fit-2="true"
+                      data-fit-3="true"
+                      js-product-size) 
+                      span 43
+                    .snapwdg2-product__size-el(
+                      data-size="44" 
+                      data-fit-stars="3"
+                      data-bestfit="false"
+                      data-fit-1="false"
+                      data-fit-2="true"
+                      data-fit-3="true"
+                      js-product-size) 
+                      span 44
                 .snapwdg2-product__size-next
                   i.snapwdg2-icon.snapwdg2-icon-arrow-next
                 .snapwdg2-product__size-prev
                   i.snapwdg2-icon.snapwdg2-icon-arrow-prev
                     
               .snapwdg2-product__fit
-                .snapwdg2-product__fit-best Best fit
-                .snapwdg2-product__fit-stars
+                .snapwdg2-product__fit-best(js-set-bestfit) Best fit
+                .snapwdg2-product__fit-stars(js-set-product-stars)
                   i.snapwdg2-icon.snapwdg2-icon-star-fill
                   i.snapwdg2-icon.snapwdg2-icon-star-fill
                   i.snapwdg2-icon.snapwdg2-icon-star-fill
@@ -157,9 +193,9 @@ block content
                   i.snapwdg2-icon.snapwdg2-icon-star-empty
               
               .snapwdg2-product__icons
-                i.snapwdg2-icon.snapwdg2-icon-fit_1_fail
-                i.snapwdg2-icon.snapwdg2-icon-fit_2_fail
-                i.snapwdg2-icon.snapwdg2-icon-fit_3_ok
+                i.snapwdg2-icon.snapwdg2-icon-fit_1_fail(js-set-productfit-1)
+                i.snapwdg2-icon.snapwdg2-icon-fit_2_fail(js-set-productfit-2)
+                i.snapwdg2-icon.snapwdg2-icon-fit_3_ok(js-set-productfit-3)
               
               .snapwdg2-product__cta
                 a(href="#").snapwdg2-btn.snapwdg2-btn-send Continue

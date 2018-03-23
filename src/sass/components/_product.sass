@@ -62,7 +62,7 @@
   &__logo
     margin-top: 55px
     text-align: left
-    .icon
+    .snapwdg2-icon
       transform: scale(.6)
       transform-origin: left center
 
@@ -75,12 +75,16 @@
 
   &__size
     position: relative
-    overflow: hidden
     margin-top: 45px
-    &-scroller
-      display: flex
+    &-wrapper
+      position: relative
+      overflow: hidden
       padding-left: 25px
       padding-right: 25px
+    &-scroller
+      display: flex
+      // overflow: hidden
+
     &-el
       font-size: 21px
       color: #889099
@@ -89,9 +93,12 @@
       display: flex
       align-items: center
       justify-content: center
-      margin: 15px
+      margin: 10px 30px 10px 0
       cursor: pointer
       transition: .25s $ease
+      &:hover
+        color: $fontColor
+        font-weight: 700
       &.is-active
         background: #FFFFFF
         color: $fontColor
@@ -102,17 +109,17 @@
       cursor: pointer
       top: 50%
       transform: translateY(-50%)
-      .icon
+      .snapwdg2-icon
         transition: .25s $ease
     &-next
       right: 0
       &:hover
-        .icon
+        .snapwdg2-icon
           transform: translateX(10px)
     &-prev
       left: 0
       &:hover
-        .icon
+        .snapwdg2-icon
           transform: translateX(-10px)
 
   &__fit
@@ -128,31 +135,38 @@
     display: flex
     box-shadow: 0px 2px 4px rgba(black, .25)
     &-best
+      flex: 0 0 auto
       background: white
       text-transform: uppercase
       font-size: 17px
       font-weight: 700
       padding: 4px 7px 4px 17px
+      transition: .25s $ease
+      &.is-best
+        background: #37474F
+        color: white
     &-stars
       flex: 1 1 auto
       background: #FAFAFA
       display: flex
       align-items: center
       justify-content: center
-      padding: 5px 15px
+      padding: 5px 10px
+      .snapwdg2-icon
+        margin: 0 2px
 
   &__icons
     margin-top: 30px
     display: flex
     align-items: center
     justify-content: center
-    .icon
+    .snapwdg2-icon
       margin: 0 7px
 
   &__cta
     position: relative
     margin-top: 60px
-    .btn
+    .snapwdg2-btn
       display: block
       max-width: 240px
 

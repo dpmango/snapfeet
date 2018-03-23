@@ -2,7 +2,10 @@
 
 .snapwdg2-modal
   position: fixed 0
+  padding: 20px 0
+  overflow-y: auto
   display: flex
+  flex-direction: column
   z-index: 999
   pointer-events: none
   opacity: 0
@@ -28,14 +31,14 @@
 
 
   &__wrapper
-    flex: 1 1 auto
+    flex: 0 0 auto
     display: flex
     flex-direction: column
     position: relative
     font-size: 0
     max-width: 860px
     overflow: hidden
-    margin: 20px auto
+    margin: auto
     background: white
 
   &__bg
@@ -58,7 +61,7 @@
       background: url('../img/background_login.jpg') no-repeat right center
       background-size: cover
   &__inner
-    flex: 1 1 auto
+    flex: 1 0 auto
     display: flex
     flex-direction: column
     position: relative
