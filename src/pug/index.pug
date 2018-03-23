@@ -132,7 +132,9 @@ block content
               .snapwdg2-product__size-title Your size
               .snapwdg2-product__size
                 .snapwdg2-product__size-wrapper
-                  .snapwdg2-product__size-scroller(js-size-scroller)
+                  // current-slide - mind that should start from 0
+                  // default state is hardcoded (is-active and all product info, including icons and start)
+                  .snapwdg2-product__size-scroller(js-size-scroller data-current-slide="1")
                     .snapwdg2-product__size-el(
                       data-size="40"
                       data-fit-stars="2.5"
@@ -149,7 +151,7 @@ block content
                       data-fit-1="false"
                       data-fit-2="false"
                       data-fit-3="true"
-                      js-product-size) 
+                      js-product-size).is-active
                       span 41
                     .snapwdg2-product__size-el(
                       data-size="42" 
@@ -158,7 +160,7 @@ block content
                       data-fit-1="true"
                       data-fit-2="false"
                       data-fit-3="true"
-                      js-product-size).is-active 
+                      js-product-size)
                       span 42
                     .snapwdg2-product__size-el(
                       data-size="43" 
@@ -178,9 +180,9 @@ block content
                       data-fit-3="true"
                       js-product-size) 
                       span 44
-                .snapwdg2-product__size-next
+                .snapwdg2-product__size-next(js-next-slide)
                   i.snapwdg2-icon.snapwdg2-icon-arrow-next
-                .snapwdg2-product__size-prev
+                .snapwdg2-product__size-prev(js-prev-slide)
                   i.snapwdg2-icon.snapwdg2-icon-arrow-prev
                     
               .snapwdg2-product__fit
