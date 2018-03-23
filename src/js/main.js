@@ -13,19 +13,19 @@ document.addEventListener('DOMContentLoaded', function(){
   // close
   [].forEach.call(document.querySelectorAll("[js-close-modal]"), function(el){
     el.addEventListener('click', function(e) {
-      var targetModal = e.target.closest('.modal')
+      var targetModal = e.target.closest('.snapwdg2-modal')
       hideModal( "#" + targetModal.getAttribute('id') )
     })
   })
 
   function showModal(id){
     // hide prev before
-    [].forEach.call(document.querySelectorAll(".modal"), function(modal){
+    [].forEach.call(document.querySelectorAll(".snapwdg2-modal"), function(modal){
       modal.classList.remove('is-active');
     })
 
     document.querySelector(id).classList.add('is-active');
-    document.querySelector('.modal-bg').classList.add('is-active');
+    document.querySelector('.snapwdg2-modal-bg').classList.add('is-active');
   }
 
   function hideModal(id){
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function(){
     setTimeout(function(){
       document.querySelector(id).classList.remove('is-active')
       document.querySelector(id).classList.remove('is-removing');
-      document.querySelector('.modal-bg').classList.remove('is-active');
+      document.querySelector('.snapwdg2-modal-bg').classList.remove('is-active');
     }, 300)
   }
 
