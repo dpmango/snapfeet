@@ -22,6 +22,13 @@ document.addEventListener('DOMContentLoaded', function(){
     })
   })
 
+  document.addEventListener('click', function(e){
+    if ( !e.target.closest('.snapwdg2-modal__wrapper') ){
+      var targetModal = e.target.closest('.snapwdg2-modal');
+      hideModal( "#" + targetModal.getAttribute('id') );
+    }
+  })
+
   function showModal(id){
     // hide prev before
     [].forEach.call(document.querySelectorAll(".snapwdg2-modal"), function(modal){
