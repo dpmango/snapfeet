@@ -29,7 +29,6 @@ block content
         .snapwdg2-modal__inner
           .snapwdg2-intro
             .snapwdg2-intro__title No more doubts about the size to choose
-            
             .snapwdg2-intro__subtitle With Snapfeet you can now make the virtual test of the shoe you buy.
             .snapwdg2-intro__cta
               a(href="#snapwdg2-modal_2" js-snapwdg2-modal).snapwdg2-btn.snapwdg2-btn-outline Login
@@ -42,7 +41,7 @@ block content
                   i.snapwdg2-icon.snapwdg2-icon-g-play
     
     // login modal
-    .snapwdg2-modal#snapwdg2-modal_2
+    .snapwdg2-modal#snapwdg2-modal_2.is-active
       .snapwdg2-modal__wrapper
         .snapwdg2-modal__close(js-snapwdg2-close-modal)
           i.snapwdg2-icon.snapwdg2-icon-close
@@ -51,14 +50,21 @@ block content
           .snapwdg2-login
             .snapwdg2-login-left
               .snapwdg2-login-left__content
-                .snapwdg2-login__title Scan the QR code with <i class="icon icon-snapfeet"></i> app
+                .snapwdg2-login__title Scan the QR code with <i class="snapwdg2-icon snapwdg2-icon-snapfeet"></i> app
                 .snapwdg2-login__qr
                   img(src='img/qr.png' srcset='img/qr@2x.png 2x')
                 .snapwdg2-login__logo
                   i.snapwdg2-icon.snapwdg2-icon-logo
                     
             .snapwdg2-login-right
+              .snapwdg2-login-mobile
+                i.snapwdg2-icon.snapwdg2-icon-logo
+                .snapwdg2-login-mobile__title Login with
+                i.snapwdg2-icon.snapwdg2-icon-snapfeet
+                .snapwdg2-login-mobile__sep
+                  span or
               .snapwdg2-login__title Login
+              
               form(action="#").snapwdg2-login__form
                 .snapwdg2-login__form-fields
                   .snapwdg2-ui-group

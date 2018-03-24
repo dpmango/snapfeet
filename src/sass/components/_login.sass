@@ -2,25 +2,26 @@
   flex: 1 1 auto
   margin: auto 0
   display: flex
-  padding: 60px
+  padding: 60px 60px 50px
+  width: 100%
   &-left
     position: relative
     flex: 0 1 50%
-    display: flex
-    flex-direction: column
     width: 50%
+    padding-right: 20px
     text-align: center
     &__content
       margin: auto 0
       position: relative
       z-index: 2
   &-right
-    flex: 0 1 50%
     width: 50%
     display: flex
     flex-direction: column
     text-align: center
     padding-left: 45px
+  &-mobile
+    display: none
 
   &__title
     font-size: 36px
@@ -35,6 +36,8 @@
     border-radius: 15px
     margin: 35px auto 0
     padding: 23px
+    user-select: none
+    pointer-events: none
     img
       max-width: 100%
 
@@ -47,15 +50,18 @@
     flex-direction: column
     margin-top: 65px
     &-fields
-      margin-bottom: 75px
+      margin-bottom: 80px
     &-button
 
     &-helpers
+      position: relative
       margin-top: 25px
       display: flex
       flex-direction: column
       align-items: center
       a
+        position: absolute
+        bottom: -20px
         font-size: 13px
         color: black
         transition: .25s $ease
@@ -63,3 +69,63 @@
         &:hover
           text-decoration: none
           color: $fontColor
+
++r(860)
+  .snapwdg2-login
+    padding-left: 20px
+    padding-right: 20px
+
++r($mobile)
+  .snapwdg2-login
+    padding: 40px 20px 70px
+    &-left
+      display: none
+    &-right
+      flex-basis: 100%
+      width: 100%
+      padding-left: 0
+      max-width: 300px
+      margin-left: auto
+      margin-right: auto
+    &-mobile
+      display: block
+      &__title
+        margin-top: 30px
+        margin-bottom: 18px
+        font-size: 18px
+        font-weight: 700
+      &__sep
+        position: relative
+        margin-top: 30px
+        font-size: 18px
+        font-weight: 700
+        &::before
+          display: inline-block
+          content: ' '
+          position: absolute
+          z-index: 1
+          top: calc(50% + 2px)
+          left: 0
+          right: 0
+          height: 1px
+          background: #898989
+        span
+          position: relative
+          z-index: 2
+          display: inline-block
+          background: white
+          padding-left: 5px
+          padding-right: 5px
+
+    &__title
+      display: none
+
+    &__form
+      margin-top: 35px
+      &-fields
+        margin-bottom: 40px
+
++r(414)
+  .snapwdg2-login
+    &-right
+      max-width: 200px

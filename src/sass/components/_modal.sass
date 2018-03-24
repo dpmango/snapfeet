@@ -2,7 +2,7 @@
 
 .snapwdg2-modal
   position: fixed 0
-  padding: 20px 0
+  padding: 20px 30px
   overflow-y: auto
   display: flex
   flex-direction: column
@@ -37,6 +37,7 @@
     position: relative
     font-size: 0
     max-width: 860px
+    width: 100%
     overflow: hidden
     margin: auto
     background: white
@@ -77,3 +78,14 @@
     transition: .25s $ease
     &:hover
       transform: scale(1.2)
+
++r($mobile)
+  .snapwdg2-modal
+    &__bg-login
+      display: none
+    &__close
+      top: 0
+      right: 0
+      transform: scale(0.8)
+      &:hover
+        transform: scale(1)
