@@ -6,12 +6,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // show modal
   [].forEach.call(document.querySelectorAll("[js-snapwdg2-modal]"), function(el){
-
     el.addEventListener('click', function(e) {
       var target = el.getAttribute('href');
       showModal(target);
     });
-
   });
 
   // close
@@ -22,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function(){
     })
   })
 
+  // close if click outside wrapper
   document.addEventListener('click', function(e){
     if ( !e.target.closest('.snapwdg2-modal__wrapper') ){
       var targetModal = e.target.closest('.snapwdg2-modal');
@@ -45,14 +44,18 @@ document.addEventListener('DOMContentLoaded', function(){
       document.querySelector(id).classList.remove('is-active');
       document.querySelector(id).classList.remove('is-removing');
       document.querySelector('.snapwdg2-modal-bg').classList.remove('is-active');
-    }, 300)
+    }, 300) // removal delay for animation
   }
 
   ////////////////
   // PRODUCT
   ///////////////
-  var slides = Array.prototype.slice.call( document.querySelectorAll("[js-snapwdg2-product-size]") );
+  // SLIDER
+  var slider = document.querySelector('[js-snapwdg2-size-scroller]');
+  var sliderSlides = slider.children;
+  var slideWidth = 75;
 
+  var slides = Array.prototype.slice.call( document.querySelectorAll("[js-snapwdg2-product-size]") ); // helper to get index
   [].forEach.call(document.querySelectorAll("[js-snapwdg2-product-size]"), function(el){
     el.addEventListener('click', function(e){
       var curIndex = slides.indexOf(this);
@@ -60,17 +63,18 @@ document.addEventListener('DOMContentLoaded', function(){
     })
   })
 
-  // SLIDER
-  var slider = document.querySelector('[js-snapwdg2-size-scroller]');
-  var sliderSlides = slider.children;
-  var sliderWidth = 0;
-  for (var i = 0; i < sliderSlides.length; i++) {
-    sliderWidth = sliderWidth + outerWidth(sliderSlides[i]);
-  }
-  var slideWidth = 75;
+  // next/prev
+  document.querySelector('[js-snapwdg2-next-slide]').addEventListener('click', function(){
+    var curSlide = parseInt(slider.getAttribute('data-current-slide'));
+    navigateSlide(curSlide + 1)
+  })
+  document.querySelector('[js-snapwdg2-prev-slide]').addEventListener('click', function(){
+    var curSlide = parseInt(slider.getAttribute('data-current-slide'));
+    navigateSlide(curSlide - 1)
+  })
 
+  // functions
   function navigateSlide(slide){
-    console.log(slide)
     if ( slide < 0 || slide >= sliderSlides.length ){
       return false
     }
@@ -88,23 +92,9 @@ document.addEventListener('DOMContentLoaded', function(){
     slider.setAttribute('data-current-slide', slide);
     slider.style[transformProp] = 'translate3d(' + calcTransform + 'px,0,0)';
 
-    // emulate click handler
     updateSlideInfo(sliderSlides[slide])
   }
 
-  // nav
-  document.querySelector('[js-snapwdg2-next-slide]').addEventListener('click', function(){
-    var curSlide = parseInt(slider.getAttribute('data-current-slide'));
-    navigateSlide(curSlide + 1)
-  })
-
-  document.querySelector('[js-snapwdg2-prev-slide]').addEventListener('click', function(){
-    var curSlide = parseInt(slider.getAttribute('data-current-slide'));
-    navigateSlide(curSlide - 1)
-  })
-
-
-  // functions
   function updateSlideInfo(el){
     var targetSize = el.getAttribute('data-size');
     var targetStars = el.getAttribute('data-fit-stars');
@@ -119,14 +109,14 @@ document.addEventListener('DOMContentLoaded', function(){
     })
     el.classList.add('is-active');
 
-    // set stars
-    setStars(targetStars, targetIsBest);
-    // set icons
+    // separate functions based on attributes
+    setStars(targetStars);
+    setIsBest(targetIsBest)
     setIcons(targetFit1, targetFit2, targetFit3)
   }
 
 
-  function setStars(rate, isBest){
+  function setStars(rate){
     var icons = document.querySelectorAll('[js-snapwdg2-set-product-stars] i')
 
     var fillIcon = 'snapwdg2-icon-star-fill'
@@ -134,40 +124,23 @@ document.addEventListener('DOMContentLoaded', function(){
     var blankIcon = 'snapwdg2-icon-star-empty'
 
     // default state
-    icons.forEach(function(icon){
+    icons.forEach(function(icon, i){
       icon.classList.remove(fillIcon);
       icon.classList.remove(halfIcon);
       icon.classList.add(blankIcon);
     })
 
-    if ( rate >= 1 ){
-      icons[0].classList.add(fillIcon)
-      if ( rate == 1.5 ){
-        icons[1].classList.add(halfIcon)
+    icons.forEach(function(icon, i){
+      if ( rate >= i + 1 ){
+        icons[i].classList.add(fillIcon)
+        if ( rate == i + 1.5 ){
+          icons[i+1].classList.add(halfIcon)
+        }
       }
-    }
-    if ( rate >= 2 ){
-      icons[1].classList.add(fillIcon)
-      if ( rate == 2.5 ){
-        icons[2].classList.add(halfIcon)
-      }
-    }
-    if ( rate >= 3 ){
-      icons[2].classList.add(fillIcon)
-      if ( rate == 3.5 ){
-        icons[3].classList.add(halfIcon)
-      }
-    }
-    if ( rate >= 4 ){
-      icons[3].classList.add(fillIcon)
-      if ( rate == 4.5 ){
-        icons[4].classList.add(halfIcon)
-      }
-    }
-    if ( rate >= 5 ){
-      icons[4].classList.add(fillIcon)
-    }
+    })
+  }
 
+  function setIsBest(isBest){
     // controll bestfit
     if ( isBest == "true" ){
       document.querySelector('[js-snapwdg2-set-bestfit]').classList.add('is-best')
@@ -214,10 +187,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
   }
 
-
-
-
-
 });
 
 
@@ -242,22 +211,6 @@ var transformProp = (function(){
     }
   }
   return 'transform';
-})();
-
-var prefix = (function () {
-  var styles = window.getComputedStyle(document.documentElement, ''),
-    pre = (Array.prototype.slice
-      .call(styles)
-      .join('')
-      .match(/-(moz|webkit|ms)-/) || (styles.OLink === '' && ['', 'o'])
-    )[1],
-    dom = ('WebKit|Moz|MS|O').match(new RegExp('(' + pre + ')', 'i'))[1];
-  return {
-    dom: dom,
-    lowercase: pre,
-    css: '-' + pre + '-',
-    js: pre[0].toUpperCase() + pre.substr(1)
-  };
 })();
 
 (function (ElementProto) {
