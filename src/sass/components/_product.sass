@@ -6,7 +6,7 @@
 
   &__left
     position: relative
-    flex: 0 1 450px
+    flex: 1 1 450px
     max-width: 450px
     padding-right: 60px
     &::after
@@ -40,6 +40,7 @@
     margin-top: 14px
 
     &-right
+      flex: 0 0 auto
       padding-left: 10px
       margin: 0 auto
 
@@ -183,3 +184,46 @@
       text-decoration: underline
       &:hover
         text-decoration: none
+
++r(860)
+  .snapwdg2-product
+    padding-left: 20px
+    padding-right: 20px
+
+
++r($mobile)
+  .snapwdg2-product
+    padding: 40px 30px 60px
+    flex-wrap: wrap
+    &__left
+      flex: 1 1 100%
+      max-width: 100%
+      padding-right: 0
+      margin-bottom: 20px
+      &::after
+        display: none
+    &__right
+      margin-left: auto
+      margin-right: auto
+
+    &__brand, &__image, &__info
+      display: none
+
+    &__logo
+      margin-top: 0px
+      text-align: center
+      .snapwdg2-icon
+        transform: scale(1)
+        transform-origin: center center
+
+    &__size-title
+      font-size: 20px
+    &__size
+      margin-top: 30px
+      &-el
+        font-size: 20px
+    &__fit
+      margin-top: 35px
+
+    &__helpers
+      display: none
