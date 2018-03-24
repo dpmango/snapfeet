@@ -3,6 +3,8 @@
   margin: auto 0
   padding: 40px 60px 30px 60px
   text-align: center
+  display: flex
+  flex-direction: column
   &__title
     font-weight: 700
     font-size: 36px
@@ -10,6 +12,10 @@
   &__subtitle
     margin: 15px 0
     font-size: 20px
+    color: #889099
+  .snapwdg2-icon-arrow-down
+    margin-left: auto
+    margin-right: auto
   &__row
     margin-top: 30px
     display: flex
@@ -41,6 +47,8 @@
     padding-top: 10px
     font-size: 22px
     min-height: 64px
+    &--mobile
+      display: none
 
   &__logo
     margin-top: 55px
@@ -57,3 +65,48 @@
       text-decoration: underline
       &:hover
         text-decoration: none
+
++r($mobile)
+  .snapwdg2-bio
+    padding: 40px 20px 50px 20px
+    &__title
+      font-size: 20px
+      order: 2
+    &__subtitle
+      font-size: 14px
+      order: 3
+      max-width: 230px
+      margin: 25px auto 20px
+      br
+        display: none
+    .snapwdg2-icon-arrow-down
+      order: 4
+    &__row
+      order: 5
+      margin-top: 10px
+    &__col
+      display: none
+      flex: 1 1 auto
+      &:nth-child(1)
+        display: block
+      &-ico
+        &--first
+          .snapwdg2-icon
+            transform: scale(.73)
+            transform-origin: center bottom
+    &__logo
+      order: 1
+      margin-top: 0px
+      margin-bottom: 60px
+      text-align: center
+      .snapwdg2-icon
+        transform: scale(1)
+        transform-origin: center center
+    &__helpers
+      display: none
+
+    &__name
+      display: none
+      font-size: 18px
+      &--mobile
+        display: block
