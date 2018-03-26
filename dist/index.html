@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- MADE WITH LOVE BY <> KHMELEVSKOY & ASSOCIATES </> www.khmelevskoy.co-->
+    <meta charset="utf-8">
+    <title>Snapfeet widget</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <!-- remove for production-->
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" media="all" href="css/app.css"><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="snapwdg2">
+      <!-- DUMMY CONTENT-->
+      <div style="height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div style="display: flex; flex-direction: column;"><a class="snapwdg2-btn snapwdg2-btn-outline" href="#snapwdg2-modal_1" js-snapwdg2-modal style="margin-bottom: 10px;">Intro modal</a><a class="snapwdg2-btn snapwdg2-btn-outline" href="#snapwdg2-modal_2" js-snapwdg2-modal style="margin-bottom: 10px;">Login modal</a><a class="snapwdg2-btn snapwdg2-btn-outline" href="#snapwdg2-modal_3" js-snapwdg2-modal style="margin-bottom: 10px;">Ops modal</a><a class="snapwdg2-btn snapwdg2-btn-outline" href="#snapwdg2-modal_4" js-snapwdg2-modal style="margin-bottom: 10px;">Product modal</a></div>
+      </div>
+      <!-- MODALS-->
+      <!-- util class-->
+      <div class="snapwdg2-modal-bg is-active"></div>
+      <!-- intro modal-->
+      <div class="snapwdg2-modal" id="snapwdg2-modal_1">
+        <div class="snapwdg2-modal__wrapper">
+          <div class="snapwdg2-modal__close" js-snapwdg2-close-modal><i class="snapwdg2-icon snapwdg2-icon-close"></i></div><img class="snapwdg2-modal__bg" src="img/background_1.jpg" srcset="img/background_1@2x.jpg 2x">
+          <div class="snapwdg2-modal__inner">
+            <div class="snapwdg2-intro">
+              <div class="snapwdg2-intro__title">No more doubts about the size to choose</div>
+              <div class="snapwdg2-intro__subtitle">With Snapfeet you can now make the virtual test of the shoe you buy.</div>
+              <div class="snapwdg2-intro__cta"><a class="snapwdg2-btn snapwdg2-btn-outline" href="#snapwdg2-modal_2" js-snapwdg2-modal>Login</a></div>
+              <div class="snapwdg2-intro__download"><span>or download the app</span>
+                <div class="snapwdg2-intro__download-icons"><a href="#" target="_blank"><i class="snapwdg2-icon snapwdg2-icon-app-store"></i></a><a href="#" target="_blank"><i class="snapwdg2-icon snapwdg2-icon-g-play"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- login modal-->
+      <div class="snapwdg2-modal" id="snapwdg2-modal_2">
+        <div class="snapwdg2-modal__wrapper">
+          <div class="snapwdg2-modal__close" js-snapwdg2-close-modal><i class="snapwdg2-icon snapwdg2-icon-close"></i></div>
+          <div class="snapwdg2-modal__bg-login"></div>
+          <div class="snapwdg2-modal__inner">
+            <div class="snapwdg2-login">
+              <div class="snapwdg2-login-left">
+                <div class="snapwdg2-login-left__content">
+                  <div class="snapwdg2-login__title">Scan the QR code with <i class="snapwdg2-icon snapwdg2-icon-snapfeet"></i> app</div>
+                  <div class="snapwdg2-login__qr"><img src="img/qr.png" srcset="img/qr@2x.png 2x"></div>
+                  <div class="snapwdg2-login__logo"><i class="snapwdg2-icon snapwdg2-icon-logo"></i></div>
+                </div>
+              </div>
+              <div class="snapwdg2-login-right">
+                <div class="snapwdg2-login-mobile"><i class="snapwdg2-icon snapwdg2-icon-logo"></i>
+                  <div class="snapwdg2-login-mobile__title">Login with</div><i class="snapwdg2-icon snapwdg2-icon-snapfeet"></i>
+                  <div class="snapwdg2-login-mobile__sep"><span>or</span></div>
+                </div>
+                <div class="snapwdg2-login__title">Login</div>
+                <form class="snapwdg2-login__form" action="#">
+                  <div class="snapwdg2-login__form-fields">
+                    <div class="snapwdg2-ui-group">
+                      <input type="email" name="email" placeholder="Email o ID snapfeet">
+                    </div>
+                    <div class="snapwdg2-ui-group">
+                      <input type="password" name="password" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="snapwdg2-login__form-button">
+                    <button class="snapwdg2-btn snapwdg2-btn-send" type="submit">Log In</button>
+                  </div>
+                  <div class="snapwdg2-login__form-helpers">
+                    <div class="snapwdg2-ui-group">
+                      <div class="snapwdg2-ui-checkbox">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree"><span>Remember me</span></label>
+                      </div>
+                    </div><a href="#">Forgot password?</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- intro modal-->
+      <div class="snapwdg2-modal" id="snapwdg2-modal_3">
+        <div class="snapwdg2-modal__wrapper">
+          <div class="snapwdg2-modal__close" js-snapwdg2-close-modal><i class="snapwdg2-icon snapwdg2-icon-close"></i></div>
+          <div class="snapwdg2-modal__inner">
+            <div class="snapwdg2-bio">
+              <div class="snapwdg2-bio__title">Ops!</div>
+              <div class="snapwdg2-bio__subtitle">It seems that you haven't done it yet <br> the biometry</div><i class="snapwdg2-icon snapwdg2-icon-arrow-down"></i>
+              <div class="snapwdg2-bio__row">
+                <div class="snapwdg2-bio__col">
+                  <div class="snapwdg2-bio__col-ico snapwdg2-bio__col-ico--first"><i class="snapwdg2-icon snapwdg2-icon-step_1"></i></div>
+                  <div class="snapwdg2-bio__name">Open the app</div>
+                  <div class="snapwdg2-bio__name snapwdg2-bio__name--mobile">Do it now!</div>
+                </div>
+                <div class="snapwdg2-bio__col">
+                  <div class="snapwdg2-bio__col-ico snapwdg2-bio__col-ico--second"><i class="snapwdg2-icon snapwdg2-icon-step_2"></i></div>
+                  <div class="snapwdg2-bio__name">Go to the Biometry section</div>
+                </div>
+                <div class="snapwdg2-bio__col">
+                  <div class="snapwdg2-bio__col-ico"><a class="snapwdg2-btn snapwdg2-btn-outline" href="#snapwdg2-modal_4" js-snapwdg2-modal>START</a></div>
+                  <div class="snapwdg2-bio__name">Press “Start”</div>
+                </div>
+              </div>
+              <div class="snapwdg2-bio__logo"><i class="snapwdg2-icon snapwdg2-icon-logo"></i></div>
+              <div class="snapwdg2-bio__helpers"><span>Not Nik? <a href="#">Change user</a></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- product modal-->
+      <div class="snapwdg2-modal is-active" id="snapwdg2-modal_4">
+        <div class="snapwdg2-modal__wrapper">
+          <div class="snapwdg2-modal__close" js-snapwdg2-close-modal><i class="snapwdg2-icon snapwdg2-icon-close"></i></div>
+          <div class="snapwdg2-modal__inner">
+            <div class="snapwdg2-product">
+              <!-- left-->
+              <div class="snapwdg2-product__left">
+                <div class="snapwdg2-product__brand"><img src="img/brand.png" srcset="img/brand@2x.png 2x"></div>
+                <div class="snapwdg2-product__image"><img src="img/product.jpg" srcset="img/product@2x.jpg 2x"></div>
+                <div class="snapwdg2-product__info">
+                  <div class="snapwdg2-product__info-left">
+                    <div class="snapwdg2-product__name">Giacalustra</div>
+                    <div class="snapwdg2-product__desc">Oxford with leather sole</div>
+                  </div>
+                  <div class="snapwdg2-product__info-right">
+                    <div class="snapwdg2-product__price">€ 185<span>00</span></div>
+                  </div>
+                </div>
+                <div class="snapwdg2-product__logo"><i class="snapwdg2-icon snapwdg2-icon-logo"></i></div>
+              </div>
+              <!-- right-->
+              <div class="snapwdg2-product__right">
+                <div class="snapwdg2-product__size-title">Your size</div>
+                <div class="snapwdg2-product__size">
+                  <div class="snapwdg2-product__size-wrapper">
+                    <!-- current-slide - mind that should start from 0-->
+                    <!-- default state is hardcoded (is-active and all product info, including icons and start)-->
+                    <div class="snapwdg2-product__size-scroller" js-snapwdg2-size-scroller data-current-slide="1">
+                      <div class="snapwdg2-product__size-el" data-size="40" data-fit-stars="2.5" data-bestfit="false" data-fit-1="true" data-fit-2="false" data-fit-3="true" js-snapwdg2-product-size> <span>40</span></div>
+                      <div class="snapwdg2-product__size-el is-active" data-size="41" data-fit-stars="5" data-bestfit="true" data-fit-1="false" data-fit-2="false" data-fit-3="true" js-snapwdg2-product-size><span>41</span></div>
+                      <div class="snapwdg2-product__size-el" data-size="42" data-fit-stars="3" data-bestfit="false" data-fit-1="true" data-fit-2="false" data-fit-3="true" js-snapwdg2-product-size><span>42</span></div>
+                      <div class="snapwdg2-product__size-el" data-size="43" data-fit-stars="4.5" data-bestfit="false" data-fit-1="true" data-fit-2="true" data-fit-3="true" js-snapwdg2-product-size> <span>43</span></div>
+                      <div class="snapwdg2-product__size-el" data-size="44" data-fit-stars="4" data-bestfit="false" data-fit-1="false" data-fit-2="true" data-fit-3="true" js-snapwdg2-product-size> <span>44</span></div>
+                    </div>
+                  </div>
+                  <div class="snapwdg2-product__size-next" js-snapwdg2-next-slide><i class="snapwdg2-icon snapwdg2-icon-arrow-next"></i></div>
+                  <div class="snapwdg2-product__size-prev" js-snapwdg2-prev-slide><i class="snapwdg2-icon snapwdg2-icon-arrow-prev"></i></div>
+                </div>
+                <div class="snapwdg2-product__fit">
+                  <div class="snapwdg2-product__fit-best" js-snapwdg2-set-bestfit>Best fit</div>
+                  <div class="snapwdg2-product__fit-stars" js-snapwdg2-set-product-stars><i class="snapwdg2-icon snapwdg2-icon-star-fill"></i><i class="snapwdg2-icon snapwdg2-icon-star-fill"></i><i class="snapwdg2-icon snapwdg2-icon-star-fill"></i><i class="snapwdg2-icon snapwdg2-icon-star-half"></i><i class="snapwdg2-icon snapwdg2-icon-star-empty"></i></div>
+                </div>
+                <div class="snapwdg2-product__icons"><i class="snapwdg2-icon snapwdg2-icon-fit_1_fail" js-snapwdg2-set-productfit-1></i><i class="snapwdg2-icon snapwdg2-icon-fit_2_fail" js-snapwdg2-set-productfit-2></i><i class="snapwdg2-icon snapwdg2-icon-fit_3_ok" js-snapwdg2-set-productfit-3></i></div>
+                <div class="snapwdg2-product__cta"><a class="snapwdg2-btn snapwdg2-btn-send" href="#">Continue</a>
+                  <div class="snapwdg2-product__helpers"><span>Not Nik? <a href="#">Change user</a></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
