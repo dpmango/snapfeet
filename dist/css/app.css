@@ -856,6 +856,7 @@ button:focus {
   font-size: 18px;
   font-weight: 400;
   padding: 12px 15px;
+  height: auto !important;
   -webkit-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;

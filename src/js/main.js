@@ -24,7 +24,9 @@ document.addEventListener('DOMContentLoaded', function(){
   document.addEventListener('click', function(e){
     if ( !e.target.closest('.snapwdg2-modal__wrapper') ){
       var targetModal = e.target.closest('.snapwdg2-modal');
-      hideModal( "#" + targetModal.getAttribute('id') );
+      if (targetModal){
+        hideModal( "#" + targetModal.getAttribute('id') );
+      }
     }
   })
 
