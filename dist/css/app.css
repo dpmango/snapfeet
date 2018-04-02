@@ -483,15 +483,15 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-app-store {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
 
 .snapwdg2-icon-arrow-down {
   background-image: url("../img/sprite.png");
-  background-position: -321px -179px;
+  background-position: -213px -103px;
   background-repeat: no-repeat;
   width: 23px;
   height: 11px;
@@ -499,15 +499,15 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-arrow-down {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
 
 .snapwdg2-icon-arrow-next {
   background-image: url("../img/sprite.png");
-  background-position: -321px -115px;
+  background-position: -277px -230px;
   background-repeat: no-repeat;
   width: 12px;
   height: 22px;
@@ -515,15 +515,15 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-arrow-next {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
 
 .snapwdg2-icon-arrow-prev {
   background-image: url("../img/sprite.png");
-  background-position: -321px -147px;
+  background-position: -255px -230px;
   background-repeat: no-repeat;
   width: 12px;
   height: 22px;
@@ -531,15 +531,15 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-arrow-prev {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
 
 .snapwdg2-icon-close {
   background-image: url("../img/sprite.png");
-  background-position: -321px -84px;
+  background-position: -321px -263px;
   background-repeat: no-repeat;
   width: 23px;
   height: 21px;
@@ -547,8 +547,8 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-close {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -557,21 +557,37 @@ template {
   background-image: url("../img/sprite.png");
   background-position: -321px 0px;
   background-repeat: no-repeat;
+  width: 36px;
+  height: 77px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .snapwdg2-icon-fit_1_fail {
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
+    background-image: url("../img/sprite@2x.png");
+  }
+}
+
+.snapwdg2-icon-fit_1_med {
+  background-image: url("../img/sprite.png");
+  background-position: -321px -179px;
+  background-repeat: no-repeat;
   width: 33px;
   height: 74px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .snapwdg2-icon-fit_1_fail {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+  .snapwdg2-icon-fit_1_med {
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
 
 .snapwdg2-icon-fit_1_ok {
   background-image: url("../img/sprite.png");
-  background-position: -255px -154px;
+  background-position: -321px -87px;
   background-repeat: no-repeat;
   width: 32px;
   height: 82px;
@@ -579,13 +595,29 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-fit_1_ok {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
 
 .snapwdg2-icon-fit_2_fail {
+  background-image: url("../img/sprite.png");
+  background-position: -255px -78px;
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 66px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .snapwdg2-icon-fit_2_fail {
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
+    background-image: url("../img/sprite@2x.png");
+  }
+}
+
+.snapwdg2-icon-fit_2_med {
   background-image: url("../img/sprite.png");
   background-position: -255px 0px;
   background-repeat: no-repeat;
@@ -594,16 +626,16 @@ template {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .snapwdg2-icon-fit_2_fail {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+  .snapwdg2-icon-fit_2_med {
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
 
 .snapwdg2-icon-fit_2_ok {
   background-image: url("../img/sprite.png");
-  background-position: -255px -78px;
+  background-position: -255px -154px;
   background-repeat: no-repeat;
   width: 46px;
   height: 66px;
@@ -611,13 +643,13 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-fit_2_ok {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
 
-.snapwdg2-icon-fit_3_ok {
+.snapwdg2-icon-fit_3_fail {
   background-image: url("../img/sprite.png");
   background-position: -93px -197px;
   background-repeat: no-repeat;
@@ -626,9 +658,41 @@ template {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .snapwdg2-icon-fit_3_fail {
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
+    background-image: url("../img/sprite@2x.png");
+  }
+}
+
+.snapwdg2-icon-fit_3_med {
+  background-image: url("../img/sprite.png");
+  background-position: -84px -262px;
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 38px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .snapwdg2-icon-fit_3_med {
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
+    background-image: url("../img/sprite@2x.png");
+  }
+}
+
+.snapwdg2-icon-fit_3_ok {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -262px;
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 38px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-fit_3_ok {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -643,8 +707,8 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-g-play {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -659,8 +723,8 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-logo {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -675,15 +739,15 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-snapfeet {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
 
 .snapwdg2-icon-star-empty {
   background-image: url("../img/sprite.png");
-  background-position: -321px -200px;
+  background-position: -213px -124px;
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
@@ -691,15 +755,15 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-star-empty {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
 
 .snapwdg2-icon-star-fill {
   background-image: url("../img/sprite.png");
-  background-position: -321px -225px;
+  background-position: -207px -150px;
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
@@ -707,15 +771,15 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-star-fill {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
 
 .snapwdg2-icon-star-half {
   background-image: url("../img/sprite.png");
-  background-position: -213px -103px;
+  background-position: -177px -197px;
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
@@ -723,8 +787,8 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-star-half {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -739,8 +803,8 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-step_1 {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -755,8 +819,8 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .snapwdg2-icon-step_2 {
-    -webkit-background-size: 354px 252px;
-            background-size: 354px 252px;
+    -webkit-background-size: 357px 300px;
+            background-size: 357px 300px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -1961,18 +2025,55 @@ button:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.snapwdg2-product__icons .snapwdg2-icon {
+.snapwdg2-product__icons-first, .snapwdg2-product__icons-second, .snapwdg2-product__icons-third {
   margin: 0 7px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.snapwdg2-product__icons-first {
+  min-width: 32px;
+  min-height: 82px;
+}
+
+.snapwdg2-product__icons-first .snapwdg2-icon {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+
+.snapwdg2-product__icons-second {
+  min-width: 52px;
+  min-height: 66px;
+}
+
+.snapwdg2-product__icons-second .snapwdg2-icon {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+
+.snapwdg2-product__icons-third {
+  min-width: 74px;
+  min-height: 38px;
+}
+
+.snapwdg2-product__icons-third .snapwdg2-icon {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 .snapwdg2-product__cta {

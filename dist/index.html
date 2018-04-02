@@ -22,7 +22,7 @@
       </div>
       <!-- MODALS-->
       <!-- util class-->
-      <div class="snapwdg2-modal-bg is-active"></div>
+      <div class="snapwdg2-modal-bg"></div>
       <!-- intro modal-->
       <div class="snapwdg2-modal" id="snapwdg2-modal_1">
         <div class="snapwdg2-modal__wrapper">
@@ -115,7 +115,7 @@
         </div>
       </div>
       <!-- product modal-->
-      <div class="snapwdg2-modal is-active" id="snapwdg2-modal_4">
+      <div class="snapwdg2-modal" id="snapwdg2-modal_4">
         <div class="snapwdg2-modal__wrapper">
           <div class="snapwdg2-modal__close" js-snapwdg2-close-modal><i class="snapwdg2-icon snapwdg2-icon-close"></i></div>
           <div class="snapwdg2-modal__inner">
@@ -143,11 +143,11 @@
                     <!-- current-slide - mind that should start from 0-->
                     <!-- default state is hardcoded (is-active and all product info, including icons and start)-->
                     <div class="snapwdg2-product__size-scroller" js-snapwdg2-size-scroller data-current-slide="1">
-                      <div class="snapwdg2-product__size-el" data-size="40" data-fit-stars="2.5" data-bestfit="false" data-fit-1="true" data-fit-2="false" data-fit-3="true" js-snapwdg2-product-size> <span>40</span></div>
-                      <div class="snapwdg2-product__size-el is-active" data-size="41" data-fit-stars="5" data-bestfit="true" data-fit-1="false" data-fit-2="false" data-fit-3="true" js-snapwdg2-product-size><span>41</span></div>
-                      <div class="snapwdg2-product__size-el" data-size="42" data-fit-stars="3" data-bestfit="false" data-fit-1="true" data-fit-2="false" data-fit-3="true" js-snapwdg2-product-size><span>42</span></div>
-                      <div class="snapwdg2-product__size-el" data-size="43" data-fit-stars="4.5" data-bestfit="false" data-fit-1="true" data-fit-2="true" data-fit-3="true" js-snapwdg2-product-size> <span>43</span></div>
-                      <div class="snapwdg2-product__size-el" data-size="44" data-fit-stars="4" data-bestfit="false" data-fit-1="false" data-fit-2="true" data-fit-3="true" js-snapwdg2-product-size> <span>44</span></div>
+                      <div class="snapwdg2-product__size-el" data-size="40" data-fit-stars="2.5" data-bestfit="false" data-fit-1="3" data-fit-2="3" data-fit-3="3" js-snapwdg2-product-size> <span>40</span></div>
+                      <div class="snapwdg2-product__size-el is-active" data-size="41" data-fit-stars="5" data-bestfit="true" data-fit-1="2" data-fit-2="2" data-fit-3="1" js-snapwdg2-product-size><span>41</span></div>
+                      <div class="snapwdg2-product__size-el" data-size="42" data-fit-stars="3" data-bestfit="2" data-fit-1="1" data-fit-2="2" data-fit-3="1" js-snapwdg2-product-size><span>42</span></div>
+                      <div class="snapwdg2-product__size-el" data-size="43" data-fit-stars="4.5" data-bestfit="false" data-fit-1="1" data-fit-2="1" data-fit-3="1" js-snapwdg2-product-size> <span>43</span></div>
+                      <div class="snapwdg2-product__size-el" data-size="44" data-fit-stars="4" data-bestfit="false" data-fit-1="2" data-fit-2="1" data-fit-3="1" js-snapwdg2-product-size> <span>44</span></div>
                     </div>
                   </div>
                   <div class="snapwdg2-product__size-next" js-snapwdg2-next-slide><i class="snapwdg2-icon snapwdg2-icon-arrow-next"></i></div>
@@ -157,7 +157,11 @@
                   <div class="snapwdg2-product__fit-best" js-snapwdg2-set-bestfit>Best fit</div>
                   <div class="snapwdg2-product__fit-stars" js-snapwdg2-set-product-stars><i class="snapwdg2-icon snapwdg2-icon-star-fill"></i><i class="snapwdg2-icon snapwdg2-icon-star-fill"></i><i class="snapwdg2-icon snapwdg2-icon-star-fill"></i><i class="snapwdg2-icon snapwdg2-icon-star-half"></i><i class="snapwdg2-icon snapwdg2-icon-star-empty"></i></div>
                 </div>
-                <div class="snapwdg2-product__icons"><i class="snapwdg2-icon snapwdg2-icon-fit_1_fail" js-snapwdg2-set-productfit-1></i><i class="snapwdg2-icon snapwdg2-icon-fit_2_fail" js-snapwdg2-set-productfit-2></i><i class="snapwdg2-icon snapwdg2-icon-fit_3_ok" js-snapwdg2-set-productfit-3></i></div>
+                <div class="snapwdg2-product__icons">
+                  <div class="snapwdg2-product__icons-first"><i class="snapwdg2-icon snapwdg2-icon-fit_1_fail" js-snapwdg2-set-productfit-1></i></div>
+                  <div class="snapwdg2-product__icons-second"><i class="snapwdg2-icon snapwdg2-icon-fit_2_fail" js-snapwdg2-set-productfit-2></i></div>
+                  <div class="snapwdg2-product__icons-third"><i class="snapwdg2-icon snapwdg2-icon-fit_3_ok" js-snapwdg2-set-productfit-3></i></div>
+                </div>
                 <div class="snapwdg2-product__cta"><a class="snapwdg2-btn snapwdg2-btn-send" href="#">Continue</a>
                   <div class="snapwdg2-product__helpers"><span>Not Nik? <a href="#">Change user</a></span></div>
                 </div>

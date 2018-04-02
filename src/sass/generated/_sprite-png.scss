@@ -4,89 +4,125 @@ $sprite: (
 		offset-y: -150px,
 		width: 104px,
 		height: 37px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	arrow-down: (
-		offset-x: -321px,
-		offset-y: -179px,
+		offset-x: -213px,
+		offset-y: -103px,
 		width: 23px,
 		height: 11px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	arrow-next: (
-		offset-x: -321px,
-		offset-y: -115px,
+		offset-x: -277px,
+		offset-y: -230px,
 		width: 12px,
 		height: 22px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	arrow-prev: (
-		offset-x: -321px,
-		offset-y: -147px,
+		offset-x: -255px,
+		offset-y: -230px,
 		width: 12px,
 		height: 22px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	close: (
 		offset-x: -321px,
-		offset-y: -84px,
+		offset-y: -263px,
 		width: 23px,
 		height: 21px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	fit_1_fail: (
 		offset-x: -321px,
 		offset-y: 0px,
+		width: 36px,
+		height: 77px,
+		total-width: 357px,
+		total-height: 300px,
+		image: '../img/sprite.png'
+	),
+	fit_1_med: (
+		offset-x: -321px,
+		offset-y: -179px,
 		width: 33px,
 		height: 74px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	fit_1_ok: (
-		offset-x: -255px,
-		offset-y: -154px,
+		offset-x: -321px,
+		offset-y: -87px,
 		width: 32px,
 		height: 82px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	fit_2_fail: (
 		offset-x: -255px,
+		offset-y: -78px,
+		width: 52px,
+		height: 66px,
+		total-width: 357px,
+		total-height: 300px,
+		image: '../img/sprite.png'
+	),
+	fit_2_med: (
+		offset-x: -255px,
 		offset-y: 0px,
 		width: 56px,
 		height: 68px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	fit_2_ok: (
 		offset-x: -255px,
-		offset-y: -78px,
+		offset-y: -154px,
 		width: 46px,
 		height: 66px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
-	fit_3_ok: (
+	fit_3_fail: (
 		offset-x: -93px,
 		offset-y: -197px,
 		width: 74px,
 		height: 38px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
+		image: '../img/sprite.png'
+	),
+	fit_3_med: (
+		offset-x: -84px,
+		offset-y: -262px,
+		width: 74px,
+		height: 38px,
+		total-width: 357px,
+		total-height: 300px,
+		image: '../img/sprite.png'
+	),
+	fit_3_ok: (
+		offset-x: 0px,
+		offset-y: -262px,
+		width: 74px,
+		height: 38px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	g-play: (
@@ -94,8 +130,8 @@ $sprite: (
 		offset-y: -103px,
 		width: 110px,
 		height: 37px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	logo: (
@@ -103,8 +139,8 @@ $sprite: (
 		offset-y: 0px,
 		width: 152px,
 		height: 49px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	snapfeet: (
@@ -112,35 +148,35 @@ $sprite: (
 		offset-y: -59px,
 		width: 130px,
 		height: 34px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	star-empty: (
-		offset-x: -321px,
-		offset-y: -200px,
+		offset-x: -213px,
+		offset-y: -124px,
 		width: 16px,
 		height: 15px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	star-fill: (
-		offset-x: -321px,
-		offset-y: -225px,
+		offset-x: -207px,
+		offset-y: -150px,
 		width: 16px,
 		height: 15px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	star-half: (
-		offset-x: -213px,
-		offset-y: -103px,
+		offset-x: -177px,
+		offset-y: -197px,
 		width: 16px,
 		height: 15px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	step_1: (
@@ -148,8 +184,8 @@ $sprite: (
 		offset-y: 0px,
 		width: 83px,
 		height: 118px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 	step_2: (
@@ -157,8 +193,8 @@ $sprite: (
 		offset-y: -128px,
 		width: 74px,
 		height: 124px,
-		total-width: 354px,
-		total-height: 252px,
+		total-width: 357px,
+		total-height: 300px,
 		image: '../img/sprite.png'
 	),
 );
@@ -235,14 +271,26 @@ $sprite: (
 	.snapwdg2-icon-fit_1_fail {
 		@include sprite(fit_1_fail)
 	}
+	.snapwdg2-icon-fit_1_med {
+		@include sprite(fit_1_med)
+	}
 	.snapwdg2-icon-fit_1_ok {
 		@include sprite(fit_1_ok)
 	}
 	.snapwdg2-icon-fit_2_fail {
 		@include sprite(fit_2_fail)
 	}
+	.snapwdg2-icon-fit_2_med {
+		@include sprite(fit_2_med)
+	}
 	.snapwdg2-icon-fit_2_ok {
 		@include sprite(fit_2_ok)
+	}
+	.snapwdg2-icon-fit_3_fail {
+		@include sprite(fit_3_fail)
+	}
+	.snapwdg2-icon-fit_3_med {
+		@include sprite(fit_3_med)
 	}
 	.snapwdg2-icon-fit_3_ok {
 		@include sprite(fit_3_ok)

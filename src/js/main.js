@@ -53,17 +53,43 @@ document.addEventListener('DOMContentLoaded', function(){
   // PRODUCT
   ///////////////
   // SLIDER
-  var slider = document.querySelector('[js-snapwdg2-size-scroller]');
-  var sliderSlides = slider.children;
-  var slideWidth = 75;
+  var slider, sliderSlides, slideWidth, slides
+  function parseSlider(){
+    slider = document.querySelector('[js-snapwdg2-size-scroller]');
+    sliderSlides = slider.children;
+    slideWidth = 75;
 
-  var slides = Array.prototype.slice.call( document.querySelectorAll("[js-snapwdg2-product-size]") ); // helper to get index
-  [].forEach.call(document.querySelectorAll("[js-snapwdg2-product-size]"), function(el){
-    el.addEventListener('click', function(e){
-      var curIndex = slides.indexOf(this);
-      navigateSlide(curIndex);
+    slides = Array.prototype.slice.call( document.querySelectorAll("[js-snapwdg2-product-size]") ); // helper to get index
+    [].forEach.call(document.querySelectorAll("[js-snapwdg2-product-size]"), function(el){
+      el.addEventListener('click', function(e){
+        var curIndex = slides.indexOf(this);
+        navigateSlide(curIndex);
+      })
     })
-  })
+  }
+
+  parseSlider();
+
+  // catch ajax to update slider
+  addXMLRequestCallback( function( xhr ) {
+    parseSlider();
+  });
+
+  function addXMLRequestCallback(callback){
+    var oldSend, i;
+    if( XMLHttpRequest.callbacks ) {
+      XMLHttpRequest.callbacks.push( callback );
+    } else {
+      XMLHttpRequest.callbacks = [callback];
+      oldSend = XMLHttpRequest.prototype.send;
+      XMLHttpRequest.prototype.send = function(){
+        for( i = 0; i < XMLHttpRequest.callbacks.length; i++ ) {
+          XMLHttpRequest.callbacks[i]( this );
+        }
+        oldSend.apply(this, arguments);
+      }
+    }
+  }
 
   // next/prev
   document.querySelector('[js-snapwdg2-next-slide]').addEventListener('click', function(){
@@ -159,31 +185,39 @@ document.addEventListener('DOMContentLoaded', function(){
     var iconFit1ok = 'snapwdg2-icon-fit_1_ok';
     var iconFit2ok = 'snapwdg2-icon-fit_2_ok';
     var iconFit3ok = 'snapwdg2-icon-fit_3_ok';
+    var iconFit1med = 'snapwdg2-icon-fit_1_med';
+    var iconFit2med = 'snapwdg2-icon-fit_2_med';
+    var iconFit3med = 'snapwdg2-icon-fit_3_med';
     var iconFit1fail = 'snapwdg2-icon-fit_1_fail';
     var iconFit2fail = 'snapwdg2-icon-fit_2_fail';
     var iconFit3fail = 'snapwdg2-icon-fit_3_fail';
 
-    if ( targetFit1 == "true" ){
-      elTargetFit1.classList.remove(iconFit1fail)
+    // null all first
+    elTargetFit1.className = 'snapwdg2-icon'
+    elTargetFit2.className = 'snapwdg2-icon'
+    elTargetFit3.className = 'snapwdg2-icon'
+
+    if ( targetFit1 == "1" ){
       elTargetFit1.classList.add(iconFit1ok)
+    } else if ( targetFit1 == "2" ){
+      elTargetFit1.classList.add(iconFit1med)
     } else {
-      elTargetFit1.classList.remove(iconFit1ok)
       elTargetFit1.classList.add(iconFit1fail)
     }
 
-    if ( targetFit2 == "true" ){
-      elTargetFit2.classList.remove(iconFit2fail)
+    if ( targetFit2 == "1" ){
       elTargetFit2.classList.add(iconFit2ok)
+    } else if ( targetFit1 == "2" ){
+      elTargetFit2.classList.add(iconFit2med)
     } else {
-      elTargetFit2.classList.remove(iconFit2ok)
       elTargetFit2.classList.add(iconFit2fail)
     }
 
-    if ( targetFit3 == "true" ){
-      elTargetFit3.classList.remove(iconFit3fail)
+    if ( targetFit3 == "1" ){
       elTargetFit3.classList.add(iconFit3ok)
+    } else if ( targetFit1 == "2" ){
+      elTargetFit3.classList.add(iconFit3med)
     } else {
-      elTargetFit3.classList.remove(iconFit3ok)
       elTargetFit3.classList.add(iconFit3fail)
     }
 

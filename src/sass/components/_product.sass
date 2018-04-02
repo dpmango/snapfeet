@@ -161,10 +161,24 @@
     margin-top: 30px
     min-height: 82px
     display: flex
-    align-items: center
     justify-content: center
-    .snapwdg2-icon
+    &-first, &-second, &-third
       margin: 0 7px
+      display: flex
+      justify-content: center
+    &-first
+      min-size: 32px 82px
+      .snapwdg2-icon
+        align-self: flex-end
+    &-second
+      min-size: 52px 66px
+      .snapwdg2-icon
+        align-self: flex-end
+    &-third
+      min-size: 74px 38px
+      .snapwdg2-icon
+        align-self: center
+
 
   &__cta
     position: relative
